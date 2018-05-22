@@ -36,6 +36,8 @@
 
 		<!-- TYPEWRITER ADD-ON FILES -->
 		<link rel='stylesheet' href='revolution-addons/typewriter/css/typewriter.css' type='text/css' media='all' />
+		<link rel='stylesheet' href='assets/css/custom.css' type='text/css' />
+		<link rel='stylesheet' href='assets/css/aniamte.css' type='text/css' />
 		<script type='text/javascript' src='revolution-addons/typewriter/js/revolution.addon.typewriter.min.js'></script>
 
 		<!-- SLICEY ADD-ON FILES -->
@@ -64,6 +66,8 @@
 		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
 		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.smoothState.js"></script>
+		<script type="text/javascript" src="assets/js/custom.js"></script>
 		<script type="text/javascript">function setREVStartSize(e){
 				try{ var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
 					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})
@@ -72,6 +76,8 @@
 	</head>
 
 	<body>
+
+		<div class="m-scene" id="main">
 
 		<div id="rev_slider_347_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="parallaxjoy" data-source="gallery" style="//background:linear-gradient(45deg, rgba(82,82,212,1) 0%, rgba(136,136,212,1) 100%);padding:0px;">
 	<!-- START REVOLUTION SLIDER 5.4.3.3 fullscreen mode -->
@@ -1382,7 +1388,7 @@
 <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
 </div><!-- END REVOLUTION SLIDER -->
 
-<div id="rev_slider_88_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="immersion-product35" data-source="gallery" style="margin:0px auto;background:rgb(240, 183, 178,0.5);padding:0px;margin-top:0px;margin-bottom:0px;">
+<div id="rev_slider_88_1_wrapper" class="scene_element scene_element--fadeinup rev_slider_wrapper fullwidthbanner-container" data-alias="immersion-product35" data-source="gallery" style="margin:0px auto;background:rgb(240, 183, 178,0.5);padding:0px;margin-top:0px;margin-bottom:0px;">
 <!-- START REVOLUTION SLIDER 5.4.7.2 fullwidth mode -->
 	<div id="rev_slider_88_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7.2">
 <ul>	<!-- SLIDE  -->
@@ -1680,7 +1686,7 @@
 			data-paddingleft="[0,0,0,0]"
 
 			style="z-index: 17; white-space: normal; font-size: 17px; line-height: 20px; font-weight: 600; color: #000000; letter-spacing: px; display: inline-block;font-family:Montserrat;border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-			SHOW ME HOW <i class="fa-icon-long-arrow-right" style="margin-left:5px;color: #e10000;"></i>
+			SHOW ME HOW <a href="start-here.html"> <i class="fa-icon-long-arrow-right" style="margin-left:5px;color: #e10000;"></i> </a>
 		</div>
 				</div>
 			</div>
@@ -3699,6 +3705,9 @@ This Template is included with <a href="https://revolution.themepunch.com/direct
 <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
 </div><!-- END REVOLUTION SLIDER -->
 
+
+
+
 		<script type="text/javascript">
 var revapi84,
 	tpj;
@@ -4165,5 +4174,8 @@ var revapi94,
 </script>
 
  	<script type="text/javascript" src="assets/warning.js"></script>
+
+</div> <!-- smoothstate end wrapper -->
 		</body>
 </html>
+/* End of File */
